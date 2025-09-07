@@ -1,0 +1,16 @@
+{
+  "name": "phys-attack-matrix",
+  "version": "0.2.0",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "serve": "http-server -p 8080 -c-1",
+    "validate": "ajv validate -s schema/phys-attack.schema.json -d \"data/*.json\" -d \"datasets/*.json\" --errors=text",
+    "lint": "node scripts/lint.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-cli": "^5.0.0",
+    "http-server": "^14.1.1"
+  }
+}

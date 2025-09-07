@@ -1,0 +1,30 @@
+{
+  "Initial Access": [
+    {
+      "technique": "Door Hardware Abuse",
+      "subtechniques": [
+        "Latch slip"
+      ],
+      "mitigations": [
+        "Latch guards",
+        "Tighten door/frame tolerance"
+      ],
+      "detections": [
+        "Forced-door alarms"
+      ],
+      "vulnerabilities": [
+        {
+          "name": "Excessive gap",
+          "evidence": "Gap visible from public side",
+          "linked_subtechnique": "Latch slip",
+          "likelihood": 0.8,
+          "impact": 0.7,
+          "detectability": 0.4,
+          "standards_ref": [
+            "ANSI/BHMA A156.13"
+          ]
+        }
+      ]
+    }
+  ]
+}
